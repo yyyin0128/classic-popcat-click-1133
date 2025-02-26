@@ -94,13 +94,18 @@
         document.getElementById('p').innerText = count;
     }
     //註冊滑鼠按下的事件
-    document.addEventListener('mousedown', add){
+    document.addEventListener('mousedown', function (){
         //呼叫計數器累加的涵式
         add();
-        //將計數器顯示到html元素
-        document.getElementById('p').innerText = count;
-    };
-
+        //註冊滑鼠按下時，更新技術器的顯示
+        console.log(count);
+        //切換張嘴圖片
+        if (count % 10 === 0) {
+            document.getElementById('p').id = 'op';
+        } else {
+            document.getElementById('op').id = 'p';
+        }
+    });
 
 
 
