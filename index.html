@@ -23,8 +23,31 @@
             height: 2em;
         }
 
+
         .cat-img {
-            background-image: url('imgs/p.png');
+            flex: 1;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+            user-select: none;
+        }
+
+        .title {
+            max-width: 600px;
+        }
+
+        .cat-img {
+            max-width: 800px;
+        }
+
+        .cat-img {
+            background-image: url('imgs/op.png');
             background-size: cover;
             background-repeat: no-repeat;
             border: 3px solid black;
@@ -35,13 +58,12 @@
             margin-top: 20px;
         }
 
-
-
-
     </style>
 </head>
 
 <body>
+
+
     <!--新增容器包裹圖片標題與點擊-->
 <div class="container">
     <img class="title" src="imgs/popcat.svg" alt="POPCAT">
