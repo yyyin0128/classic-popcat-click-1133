@@ -1,74 +1,64 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POPCAT CLASSIC</title>
-    <!--容器 box 高度100vh flex排版方向column 置中-->
-
-
-
     <style>
-        .container {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            background-color: #bdaa90;
-
-        }
-
-        .title {
-            width: 150%;
-            height: 10em;
-        }
-
-
-        .cat-img {
-            flex: 1;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: sans-serif;
             user-select: none;
         }
-
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #bdaa90;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+        }
         .title {
+            width: 80%;
             max-width: 600px;
+            margin-top: 2em;
         }
-
         .cat-img {
+            width: 100%;
             max-width: 800px;
-        }
-
-        .cat-img {
-            background-image: url('imgs/op.png');
+            text-align: center;
+            color: white;
+            font-size: 80px;
+            border: 3px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+            background-image: url('imgs/p.png');
+            background-position: bottom;
             background-size: cover;
             background-repeat: no-repeat;
-            border: 3px solid black;
-            text-align: center;
-            font-size: 100%;
-            font-weight: bold;
-            color: white;
-            margin-top: 80px;
         }
-
+        #extra-text-box {
+            background-image: url('imgs/op.png');
+        }
     </style>
 </head>
-
 <body>
-
-
-    <!--新增容器包裹圖片標題與點擊-->
 <div class="container">
     <img class="title" src="imgs/popcat.svg" alt="POPCAT">
     <div class="cat-img" id="p">0</div>
+    <div class="cat-img" id="extra-text-box">額外文字</div>
 </div>
-
 </body>
 </html>
