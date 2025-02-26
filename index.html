@@ -3,10 +3,36 @@
 <html lang="en">
 <head>
     <title>POPCAT CLASSIC</title>
+    <!--容器 box 高度100vh flex排版方向column 置中-->
+    <style>
+        .container {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .title {
+            width: 200px;
+            height: 200px;
+        }
+
+        .cat-img {
+            font-size: 50px;
+            font-weight: bold;
+            color: #000;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 
 <body>
-<img class="title" src="imgs/popcat.svg" alt="POPCAT">
-<div class="cat-img" id="p">0</div>
+    <!--新增容器包裹圖片標題與點擊-->
+<div class="container">
+    <img class="title" src="imgs/popcat.svg" alt="POPCAT">
+    <div class="cat-img" id="p">0</div>
+</div>
+
 </body>
 </html>
