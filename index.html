@@ -81,4 +81,29 @@
 </div>
 
 </body>
+<script>
+    //計數器初始化
+    let count = 0;
+    //將計數器顯示到html元素，用id抓取
+    document.getElementById('p').innerText = count;
+    //顯示計數器
+    console.log(count);
+    //寫一個計數器累加的涵式
+    function add() {
+        count++;
+        document.getElementById('p').innerText = count;
+    }
+    //註冊滑鼠按下的事件
+    document.addEventListener('mousedown', add){
+        //呼叫計數器累加的涵式
+        add();
+        //將計數器顯示到html元素
+        document.getElementById('p').innerText = count;
+    };
+
+
+
+
+
+    </script>
 </html>
